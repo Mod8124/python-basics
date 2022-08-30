@@ -13,3 +13,8 @@ x = 1j
 import random
 
 print(random.randrange(1, 10))
+
+# Casting 
+e = str('10')
+e = 10;
+print(type(e), 'eso');
