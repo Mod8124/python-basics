@@ -114,3 +114,36 @@ if it has some sort of content if going to return true except empty, 0 and None 
     bool('eso')
     # true
 ```
+
+# Operators
+
+all are teh same XD
+
+execept that 
+- `==` are equal
+- `!=` not equal
+
+logical operator
+- `and` is the equal to '&&' 
+- `or` is the equal to '||'
+- `not` is equal to '!'
+
+#### identity Operators
+- `is` return boolean example x is 5
+- `is not` the save but reverse XD
+
+#### Membership Operator
+- `in` loop inside a element a return true, if is inside 
+- `not in` the same thing but reverse lol 
+
+# list
+well, list is the same that array xD
+`number = [1,2, 3, 4]`
+`list((1,2,3))` create a list with casting
+
+#### get the len
+`len(number)` return the length of number 
+
+
+
+
