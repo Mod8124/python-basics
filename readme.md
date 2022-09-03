@@ -1,5 +1,5 @@
 # Pythong - Basics
-
+This is repository, I am just learning python by myself because i want to learn **django**..
 ## variables 
 `x = 5`
 
@@ -144,6 +144,113 @@ well, list is the same that array xD
 #### get the len
 `len(number)` return the length of number 
 
+#### change a range of item values 
+```python
+  numbs = [1, 2, 3,4]
+  numbs[0,1] = [22, 10]
+  #[22, 10, 3, 4]
+```
 
+#### insert 
+insert a value in the list
+```python
+numbs = [1, 2,3]
+numbs.insert(0, 'esoo')
+#first position(index), secon parameter value
+```
 
+#### Append
+insert add value in the last index
+`append(value)`
+
+#### extend 
+is the same the concat on arrays also accept whatever data type of list, tupple, dictionary
+`array1.extend(array2) = [...arrya1, ...array2]`
+
+#### Remove 
+Remove a specify element **omg**
+
+```python
+numbs = [1, 2,3,4]
+numbs.remove(2)
+```
+
+#### pop 
+remove the last index
+`numbs.pop()`
+
+#### del
+keyword specified index
+`del numbs[0]`
+
+#### clear
+clear the arrays **omg**
+
+#### loops
+loops in list
+```python
+for x in numbs:
+  print(x)
+
+```
+
+also for runs with index, there is something called `range` range is like a list 
+```python
+for x in range(10)
+# is going to print from zero to ten why ? idk
+
+also you can do this
+for x in range(len([1, 2,3]))
+#x is going to be index of length []
+#print the element [][x] xD
+```
+
+#### while
+is the same thing xddd while condition is true repeat but there is something
+interesting if it's false has else example
+```python
+ count = 0
+ while 0 < 2:
+  print(count)
+  # 0 
+  #1 
+  #2
+  else:
+    print('finish)
+  #finish
+```
+
+#### list Compresion
+shortcout for interat list xddddd
+`new = [variable for in iterable if condition`
+```python
+newlist = [x for x in fruits if "a" in x]
+# instead
+for x in fruits:
+  if "a" in x:
+    newlist.append(x)
+```
+
+#### Sort list
+this method is **case sensitive**
+thisList = []
+thisList.sort()
+- reverse
+reverse all elements but has `reverse and sort(reverse=true)`
+`thisList.sort(reverse=true)`
+
+- desative case sensitive
+`thisList.sort(key=str.lower)`
+
+#### copy lists
+reference = `list2 = list1` is just a reference so if list1 change list2 is goint to change too `list2 = list1.copy()` || `list2 =list(list1)` (unmuteable)
+
+#### Count 
+count how many times are in the list
+
+#### index 
+return the index of the element 
+`list.index(1) = 0`
+
+# tupple
 
