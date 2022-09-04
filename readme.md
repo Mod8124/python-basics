@@ -1,13 +1,27 @@
 # Pythong - Basics
-This is repository, I am just learning python by myself because i want to learn **django**..
-## variables 
+I am just learning python by myself because i want to learn **django**..
+
+# Table of Contents
+- [Variable](#variables)
+- [Comment](#comment)
+- [Data-types](#data-types)
+- [Casting](#casting)
+- [Number](#number)
+- [String](#string)
+- [Boolean](#boolean)
+- [Operator](#operators)
+- [List](#list)
+- [Tupple](#tupple)
+- [Set](#set)
+
+# variables 
 `x = 5`
 
-## comment
+# comment
 
 `# comments`
 
-## Data Types
+# Data Types
 
 ```python
  text : str()
@@ -54,8 +68,9 @@ x = bytearray(5) bytearray
 x = None
 
 ```
-## Casting
+# Casting
 "Specify" XD the type 
+
 ### casting is the same to covert 
 
 x = int(10)
@@ -137,7 +152,7 @@ logical operator
 - `not in` the same thing but reverse lol 
 
 # list
-well, list is the same that array xD
+It's a collection that is ordered and **muteable** (allow duplicated) also list is the same that array xD
 `number = [1,2, 3, 4]`
 `list((1,2,3))` create a list with casting
 
@@ -252,5 +267,44 @@ count how many times are in the list
 return the index of the element 
 `list.index(1) = 0`
 
-# tupple
+# tupple 
+`thisTupple = (1, 2,3,4)`
+- It's a **unchangeable**
+- It's ordered
+- It's indexed
+- Allow duplicates
+- Unpack available
+- Can have any data type
+
+### tupple Constructor
+`tupple((1, 2, 3))`
+
+#### tupple slice(range of indexes)
+`thisTupple[2:5]`
+
+### Hack the system
+First tupple then covert to list change the value and then return again a tupple XD
+for add or remove is to convert a list then again to tupple
+```python
+x = ("apple", "banana", "cherry")
+y = list(x)
+y[1] = "kiwi"
+x = tuple(y)
+```
+
+### loop Tupple
+It the same lfamo xD
+`for x in tupple` || `for x in range(len(tupple))`
+
+
+### join
+this is interesting xd
+```python
+ tupple = (1, 2, 3,4)
+ tupple2 = tupple * 2 
+ # 1, 2, 3, 4, 1, 2, 3 ,4
+```
+
+# Set
+
 
