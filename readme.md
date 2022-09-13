@@ -13,6 +13,11 @@ I am just learning python by myself because i want to learn **django**..
 - [List](#list)
 - [Tupple](#tupple)
 - [Set](#set)
+- [Dictionaries](#dictionaries)
+- [If..else](#if-else)
+- [Functions](#functions)
+- [Class](#clases)
+- [Inheritance](#inheritance)
 
 # variables 
 `x = 5`
@@ -306,5 +311,234 @@ this is interesting xd
 ```
 
 # Set
+`thisSet = {1, 2, 3}`
+- Multiple values in single line
+- unordered 
+- unmuteable
+- unindexed
+- duplicates **not** allowed
+- Any data is available XD
+
+### Get the len
+is the same xd
+
+### Set Constructor
+`set((1, 2, 3))`
+
+### acces item 
+`for x in thisset
+  print(x)`
+
+**you can add items** but **not change**
+
+### Join to sets
+`thiset.update(thiset2)`
+`thisset.union(set2)`
+
+`thiset.intersection(thisset2)` only contains (that repeats ones)
+`thiset.difference(thiset2)` only contains(**not** reapeat ones)
+
+### remove a item 
+`thisset.remove('banana')`
+if the item doesn't exits will raise an error
+
+### discard a item 
+`thisset.discard('banana)`
+same but **not** will raise an error
+
+### delete a element aleatory 
+`thisset.pop()`
+
+### clear the set
+`thisset.clear()`
+
+### Remove complete the set
+`del thisset`
+
+# Dictionaries
+dictionaries are like objects xddddddddd
+- store data in `key` and `values`
+- not **allow duplicates**
+- changeable
+- ordered
+- any data
+
+`thisdict = {
+  'name':'denis',
+  'age':22
+}`
+
+- has len
+
+### get the item 
+`thisdict['name']` or `thisdict.get('name')`
+
+### get the key
+`thisdict.keys()`
+
+##3 get the values
+`thisdict.values()`
+
+### get Items
+`thisdict.items()` return the elemetn in list
+
+### check if the key exits
+`if 'hola' in thisdict:
+    print('eso')
+
+### add items 
+
+`thisdict = {} thisdict['name'] = 'denis'`;`
+`thisdict = {} thisdict.update({"instagram":"red"});`
+
+### removing items
+`thisdict = {} thisdict.pop('model');`
+
+### removing item
+`thisdict.popitem();`
+`del thisdict['name'];`
+
+### clear the dict
+`thisdict.clear()`
+
+### loop dictionaries
+` for x in thisdict:
+  print(x)
+` return keys
+
+`for x in thisdict:
+  print(thisdict[x])
+` return the values
+
+`
+  for x in thisdict.values():
+  print(x)
+`
+
+`
+  for x, y in thisdict.items():
+  print(x, y)
+` return key and values
+
+
+### Copy Dictionaires
+`x = thisdict.copy()` or `x = dict(thisdict)`
+
+### methods
+- clear()
+- copy()
+- fromKeys()
+- get()
+- items()
+- keys()
+- pop() 'especify keys'
+- popitem() 'last inserted remove'
+- update()
+- values()
+
+# If else
+- equal `a == b`
+- not equal `a !=B`
+
+### if and else if
+if the previous conditions were not true, then try this condition
+```python
+  if a == b:
+    print('hola')
+  elif c != C:
+    print('no')
+```
+### the pass statement
+```python
+  if b > a:
+    pass
+```
+
+# Functions
+
+```python
+def my_function():
+  print('blog')
+```
+
+a **parameter** is the variable listed inside the parentheses
+a **argument** is the value that sent to the function when it's called
+
+### Manuy arguments but you dk how many
+```python
+def hola(*greeds):
+  print(greegs)
+```
+### Functions emptys
+```python
+  def myFunction():
+    pass
+```
+
+# Lambda
+is like small function or arrow functions xd, the power of lamdba function is to use inside another function xd
+`x = lambda a : a + 10` = `x lambda argument argumen2 : argument + argument2`
+`print(x(10,10)`
+
+# Clases
+Something particulary about class in python if you print the class, it doesn't return the keys inside of the class 
+`class MyClass:
+  x = 5
+`
+this is bad practices xd
+`
+class Person:
+  def __init__(self, name, age):
+   self.name = name
+    self.age = age
+`
+this is good practices the init run when class it's execute
+
+### Function inside the class
+The self inside the function refer to the class itself ** the self it doesn't have to call self** xd, if you create a function inside the class need to have a self **parameter**
+```python
+class Person:
+  def __init__(self)
+
+  def myFunc(self):
+```
+
+### delete object properties
+`del person.name`
+
+### delete object of the class
+`del person`
+
+# Inheritance
+Inheritance allows us to define a class all the methods and properties from another class xd
+```python
+class Person:
+  def __init__(self, name)
+    self.name = name
+class Student(Person):
+   pass
+# if you dont' have to pass
+
+class Student(Person):
+  def __init__(self, name , year)
+   self.year = year
+   Person.__init__(self, name)
+
+```
+
+### Super 
+let you pass also the function of class
+```python
+ class Student(Person):
+  def __init__(self, name, year)
+    super().__init__(name)
+
+    def sayHi(self):
+      print(self.name + self.year)
+```
+
+
+
+
 
 
