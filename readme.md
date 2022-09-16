@@ -18,6 +18,8 @@ I am just learning python by myself because i want to learn **django**..
 - [Functions](#functions)
 - [Class](#clases)
 - [Inheritance](#inheritance)
+- [Interator](#iterators)
+- [Scope](#scope)
 
 # variables 
 `x = 5`
@@ -537,7 +539,56 @@ let you pass also the function of class
       print(self.name + self.year)
 ```
 
+# Iterators
+i dk what are they useful but it's like a slider xddddddd by default `for x in something` has this behaviour but automally
 
+```python
+list = ('banana', 'fresa', 'melon')
+interlist = iter(list)
+
+print(next(interlist))
+# banana
+```
+
+# Scope 
+it's the same thing xddd that js
+
+# Dates
+A normal data xddd by the way python doesn't have date time(just import)
+
+# Math
+Math function xd
+- `min` find the min numbers's range
+- `max` find the max numbers's range
+- `abs` return the number in positive way
+- `pow` return the power of two numbers = a * a = a^a
+- `import math`
+ - `math.sqrt(n)` return the root of a number
+ - `math.floor` return the lowest 
+ - `math.ceil` return the highest
+ - `math.pi` return the values of **api**
+
+# Json
+for handle **json** `import json`
+
+json to python `json.loads(x)`
+python to json `json.dumps(x)` by the way you can format
+
+# pip 
+it's for handling package on python
+
+# try and catchs
+```python
+ try:
+  print(x)
+except:
+  print('error')
+```
+### throw error
+`raise TypeError('only interger')`
+
+# Input
+`input(text)`
 
 
 
